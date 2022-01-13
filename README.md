@@ -7,6 +7,6 @@ vite的mock插件，用于本地调试的数据的mock。分析如下：
 3. 那么首先读取mock数据的地址，假定为`options.entry`，不存在默认读`./mock/index.ts`
 4. 通过`createRouteMap`方法将数据存储。然后读取`req`的url进行匹配。匹配到，返回对应的mockData的response。
 
-#### install
+#### Install
  - npm i or pnpm i
  - npm run dev

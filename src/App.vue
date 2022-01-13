@@ -18,7 +18,6 @@ const mockPost = async () => {
   console.log('mock post data:', data);
 }
 onMounted(async () => {
-  console.log(9999)
   await mockGet();
   await mockPost();
 })
