@@ -3,6 +3,7 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import HelloWorld from './components/HelloWorld.vue'
 import { onMounted } from 'vue';
+import I18n from './components/i18n.vue';
 
 const mockGet = async () => {
   const response = await fetch('/api/getUser');
@@ -25,6 +26,7 @@ onMounted(async () => {
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
+  <I18n />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
 </template>
 
